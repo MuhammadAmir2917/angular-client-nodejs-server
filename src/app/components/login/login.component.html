@@ -1,0 +1,21 @@
+<div class="centered-form">
+  <div class="centered-form__form">
+    <form id="login-form">
+      <div class="form-field">
+        <h3>Login</h3>
+        <p *ngIf="errMessage">Invalid Email/Password</p>
+      </div>
+      <div class="form-field">
+        <label>Email</label>
+        <input type="email" [(ngModel)]="user.email" name="email"/>
+      </div>
+      <div class="form-field">
+        <label>Password</label>
+        <input type="password" [(ngModel)]="user.password" name="password"/>
+      </div>
+      <div class="form-field">
+        <button (click)="login()">Login</button>
+      </div>
+    </form>
+  </div>
+  </div>

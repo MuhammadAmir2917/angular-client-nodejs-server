@@ -1,0 +1,32 @@
+
+<div class="centered-form">
+<div class="centered-form__form">
+  <form id="register-form">
+    <div class="form-field">
+      <h3>Create Account</h3>
+    </div>
+    <div class="form-field">
+      <label>First name</label>
+      <input type="text" [(ngModel)]="user.firstname" name="firstname" autofocus/>
+    </div>
+    <div class="form-field">
+      <label>Last Name</label>
+      <input type="text" [(ngModel)]="user.lastname" name="lastname"/>
+    </div>
+    <div class="form-field">
+      <label>Email</label>
+      <input type="email" [(ngModel)]="user.email" name="email"/>
+    </div>
+    <div class="form-field">
+      <label>Password</label>
+      <input type="password" [(ngModel)]="user.password" name="password"/>
+    </div>
+    <div class="form-field">
+      <button (click)="register()">Create</button>
+    </div>
+    <div class="form-field">
+      <a href="./login.html">if already account login here</a>
+    </div>
+  </form>
+</div>
+</div>
